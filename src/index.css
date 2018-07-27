@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+*{
+    box-sizing: border-box;
+}
+
+.Card{
+    width: 600px;
+    padding: 60px 36px 40px;
+    margin: 150px auto;
+    font-family: 'Nunito', sans-serif;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.Refresh{
+    margin: 60px auto 0;
+    cursor: pointer;
+    background-color: #2CAF36;
+    color: #FFF;
+    width: 180px;
+    padding: 10px 60px;
+    border-radius:3px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+.TimeContainer{
+    display: flex;
+    align-items: baseline;
+}
+
+.Label{
+    color: #9B9696;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.TimeContainer:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.Time{
+    color: #484747;
+    font-size: 20px;
+}
+
+.RemainingTime{
+    color: #484747;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timeRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.RemainingTimeContainer{
+    display: flex;
+    align-items: baseline;
+    background-color: #CBFFAF;
+    padding: 19px 18px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
