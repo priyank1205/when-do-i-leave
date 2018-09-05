@@ -15,4 +15,5 @@ app.get('/api', (req,res) => {
     .then(data => res.send(data))
 });
 
-app.listen(3002, () => console.log('Example app listening on port 3002!'))
+const PORT = 3002;
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
