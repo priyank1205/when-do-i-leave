@@ -24,7 +24,7 @@ class App extends Component {
     }
 
     fetchHours = () => {
-        fetch(`https://people.zoho.com/people/api/attendance/getAttendanceEntries?authtoken=${Auth_Token}&date=${today}&dateFormat=${date_format}&emailId=${Email_ID}&empId=${Emp_ID}`)
+        fetch('/api')
         .then(resp => {return resp.json()})
         .then(data => {
             let now = moment();
