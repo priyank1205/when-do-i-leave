@@ -34,7 +34,8 @@ class App extends Component {
                 goingTime: offTime.format('hh:mm A'),
                 remainingTime: moment.utc(offTime.diff(now)).format('h:mm')
             })
-            console.log(this.state.remainingTime);
+            console.log(offTime);
+            console.log(now);
         })
     }
 
