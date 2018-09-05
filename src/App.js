@@ -3,11 +3,6 @@ import moment from 'moment';
 import ShowTime from './showTime';
 import Remaining from './Remaining';
 import './index.css';
-const Auth_Token = 'bea91b9482657b17affa3d8cd33a1cf3';
-let Emp_ID = 'M703453';
-let Email_ID = 'priyank.agarwal@medlife.com';
-const date_format = 'dd-MMM-yyyy';
-let today = moment().format('DD-MMM-YYYY');
 
 class App extends Component {
     constructor(props) {

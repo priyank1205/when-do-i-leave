@@ -2,7 +2,7 @@
   "name": "test",
   "version": "0.1.0",
   "private": true,
-  "engines":{
+  "engines": {
     "node": "8.11.3"
   },
   "dependencies": {
@@ -22,8 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server": "nodemon src/Server.js",
-    "start": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+    "server": "nodemon Server.js",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "homepage": "https://when-do-i-leave.herokuapp.com/"
 }
