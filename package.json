@@ -23,7 +23,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "server": "nodemon Server.js",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install && npm run build"
   },
   "homepage": "https://when-do-i-leave.herokuapp.com/"
 }
