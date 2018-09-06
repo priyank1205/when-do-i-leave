@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api', (req,res) => {
-    rp(`https://people.zoho.com/people/api/attendance/getAttendanceEntries?authtoken=${Auth_Token}&date=${today}&dateFormat=${date_format}&emailId=${Email_ID}&empId=${Emp_ID}`)
+    rp(`people.zoho.com/people/api/attendance/getAttendanceEntries?authtoken=${Auth_Token}&date=${today}&dateFormat=${date_format}&emailId=${Email_ID}&empId=${Emp_ID}`)
     .then(data => res.send(data))
 });
 
