@@ -23,5 +23,5 @@ app.get('/api', (req,res) => {
     .then(data => res.send(data))
 });
 
-const PORT = 3002;
+const port = process.env.PORT || 3002;
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
