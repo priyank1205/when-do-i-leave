@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import ShowTime from './showTime';
 import Remaining from './Remaining';
+import MetaTags from 'react-meta-tags';
 import './index.css';
 
 class App extends Component {
@@ -37,6 +38,9 @@ class App extends Component {
     render() {
         return (
             <div className="Card">
+            <MetaTags>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </MetaTags>
                 <div className='timeRow'>
                     <div className='attendanceTime'>
                         <ShowTime label="Check-in Time" time={this.state.inTime} />
